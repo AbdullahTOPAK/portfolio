@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otonom Fixer | Abdullah TOPAK</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#0a0a0c] text-gray-300 font-sans select-none">
+
+    <!-- ÜST MENÜ -->
+    <nav class="fixed w-full z-50 bg-[#0a0a0c]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tighter text-white hover:opacity-80 transition">AT<span class="text-blue-500">.</span></a>
+            <div class="text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="flex items-center text-gray-400 hover:text-blue-500 transition">
+                    <i class="fa-solid fa-arrow-left mr-2"></i> Anasayfaya Dön
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PROJE BAŞLIĞI (HERO) -->
+    <header class="pt-40 pb-16 px-6 border-b border-white/5 bg-gradient-to-b from-[#0f172a]/30 to-transparent">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block text-emerald-500 font-mono text-xs mb-6 uppercase tracking-[0.3em] px-4 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/20">
+                AI Agents & Multi-Agent Systems
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">Otonom Fixer</h1>
+            <p class="text-xl text-emerald-500 font-bold tracking-widest mb-6">YAPAY ZEKA TABANLI HATA ÇÖZÜCÜ</p>
+            <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
+                Yazılım projelerindeki mantıksal hataları ve bug'ları agentic akıl yürütme yöntemleriyle otonom olarak tespit eden, analiz eden ve otomatik kod yamaları üreten çoklu ajan sistemi.
+            </p>
+        </div>
+    </header>
+
+    <!-- PROJE DETAYLARI İÇERİK ALANI -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
+            
+            <!-- SOL KOLON (GENİŞ ALAN) -->
+            <div class="lg:col-span-2 space-y-16">
+                
+                <!-- Teknik Özellikler -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-4">Teknik Özellikler</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl hover:border-blue-500/30 transition">
+                            <i class="fa-solid fa-network-wired text-3xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Multi-Agent Koordinasyonu</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Kod inceleme, hata tespiti ve yama doğrulama adımlarının farklı uzman ajanlar tarafından ortaklaşa yürütülmesi.</p>
+                        </div>
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl hover:border-emerald-500/30 transition">
+                            <i class="fa-solid fa-brain text-3xl text-emerald-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Agentic Reasoning (Akıl Yürütme)</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Gelişmiş LLM mimarileri kullanarak hataların sadece yerini belirlemekle kalmaz, kök nedenini mantıksal olarak analiz eder.</p>
+                        </div>
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl hover:border-purple-500/30 transition">
+                            <i class="fa-solid fa-code text-3xl text-purple-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Otonom Yama (Patch) Üretimi</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Tespit edilen yazılımsal bug'lar için projenin mevcut mimari yapısına ve kodlama standartlarına tam uyumlu çözümler yazar.</p>
+                        </div>
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl hover:border-amber-500/30 transition">
+                            <i class="fa-solid fa-box-archive text-3xl text-amber-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Sandbox Doğrulama</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Üretilen yamaların ana koda basılmadan önce izole bir konteyner (sandbox) ortamında otomatik derlenip test edilmesi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAĞLANTI SEÇENEKLERİ (YENİ EKLENEN BÖLÜM) -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-purple-500 pl-4">Model Bağlantı Altyapısı</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Local LLM Bağlantısı -->
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl border-l-4 border-l-amber-500">
+                            <i class="fa-solid fa-server text-3xl text-amber-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Yerel (Local) Çalışma Modu</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4">Kod güvenliği ve gizliliğinin en üst düzeyde olması gereken projeler için geliştirilmiş çalışma seçeneği.</p>
+                            <div class="space-y-1.5 text-xs text-gray-500 font-mono">
+                                <div><span class="text-amber-500">•</span> Ollama Entegrasyonu</div>
+                                <div><span class="text-amber-500">•</span> Llama 3 / Mistral Çevrimdışı Çalışma</div>
+                                <div><span class="text-amber-500">•</span> %100 Veri Gizliliği (Zero Data Leak)</div>
+                            </div>
+                        </div>
+
+                        <!-- API Bağlantısı -->
+                        <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl border-l-4 border-l-blue-500">
+                            <i class="fa-solid fa-cloud-bolt text-3xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-white mb-2">Bulut (API) Çalışma Modu</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-4">Büyük ölçekli projeler ve karmaşık mantıksal analiz gerektiren bug'lar için yüksek performanslı çalışma seçeneği.</p>
+                            <div class="space-y-1.5 text-xs text-gray-500 font-mono">
+                                <div><span class="text-blue-500">•</span> Groq API ile Ultra Hızlı Çıkarım</div>
+                                <div><span class="text-blue-500">•</span> OpenAI (GPT-4o) / Claude Sonnet Entegrasyonu</div>
+                                <div><span class="text-blue-500">•</span> Gelişmiş Agentic Akıl Yürütme Kapasitesi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Çoklu Ajan Görev Kılavuzu -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-emerald-500 pl-4">Çoklu Ajan İş Akış Kılavuzu</h2>
+                    <div class="bg-[#16161a] p-8 rounded-3xl border border-white/5 shadow-xl">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4 border border-white/10">
+                                    <i class="fa-solid fa-magnifying-glass text-gray-300 text-3xl"></i>
+                                </div>
+                                <span class="text-emerald-500 font-bold mb-1 text-sm">Dedektif Ajan</span>
+                                <span class="text-gray-400 text-[10px]">Log ve Hata Taraması</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4 border border-white/10">
+                                    <i class="fa-solid fa-chart-line text-gray-300 text-3xl"></i>
+                                </div>
+                                <span class="text-emerald-500 font-bold mb-1 text-sm">Analist Ajan</span>
+                                <span class="text-gray-400 text-[10px]">Kök Neden Analizi</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4 border border-white/10">
+                                    <i class="fa-solid fa-laptop-code text-gray-300 text-3xl"></i>
+                                </div>
+                                <span class="text-emerald-500 font-bold mb-1 text-sm">Kodör Ajan</span>
+                                <span class="text-gray-400 text-[10px]">Yama ve Fix Üretimi</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4 border border-white/10">
+                                    <i class="fa-solid fa-shield text-gray-300 text-3xl"></i>
+                                </div>
+                                <span class="text-emerald-500 font-bold mb-1 text-sm">Validatör Ajan</span>
+                                <span class="text-gray-400 text-[10px]">Sandbox Test Onayı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proje Çıktıları Galeri -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8 border-l-4 border-blue-500 pl-4">Sistem Çıktıları ve Analiz Ekranları</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/5 bg-[#16161a] shadow-xl">
+                            <img src="error_trace.jpg" alt="Hata İzleme Ekranı" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/5 bg-[#16161a] shadow-xl">
+                            <img src="agent_logs.jpg" alt="Ajan Log Akışı" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/5 bg-[#16161a] shadow-xl">
+                            <img src="patch_diff.jpg" alt="Kod Diferansiyel Analizi" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden border border-white/5 bg-[#16161a] shadow-xl">
+                            <img src="sandbox_test.jpg" alt="Sandbox Test Çıktısı" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- SOL KOLON BİTİŞ -->
+
+            <!-- SAĞ KOLON (AFİŞ/MİMARİ ŞEMA) -->
+            <div class="lg:block">
+                <div class="sticky top-32 bg-[#16161a] p-4 rounded-3xl border border-white/5 shadow-2xl">
+                    <img src="otonom_fixer_mimari.png" alt="Otonom Fixer Mimari Şeması" class="w-full h-auto rounded-2xl shadow-lg">
+                    <p class="mt-4 text-center text-xs text-gray-500 font-mono italic">Ajanlar Arası Mimari Şeması</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GITHUB REPO BÖLÜMÜ -->
+    <section class="py-20 px-6 bg-[#0f0f12] border-t border-white/5">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Kaynak Kodları</h2>
+            <p class="text-gray-400 mb-10 leading-relaxed">
+                Otonom Fixer projesinin tüm agent prompt zincirlerini, çoklu ajan koordinasyon kütüphanelerini ve test altyapısını GitHub üzerinden inceleyebilirsiniz.
+            </p>
+            <a href="https://github.com/AbdullahTOPAK/otonom-fixer-server" target="_blank" class="inline-flex items-center gap-3 bg-white text-black px-10 py-4 rounded-full font-black hover:bg-gray-200 transition-all duration-300 shadow-xl shadow-white/5">
+                <i class="fa-brands fa-github text-2xl"></i>
+                GITHUB'DA GÖRÜNTÜLE
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#111111] py-10 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            Copyright © 2026 Abdullah Topak | Otonom Fixer
+        </div>
+    </footer>
+
+</body>
+</html>
