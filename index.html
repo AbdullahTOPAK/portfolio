@@ -199,6 +199,7 @@
 
         <div class="max-w-5xl mx-auto space-y-12">
             
+            <!-- Proje 1: Proje Engelsiz -->
             <a href="engelsiz.html" class="block group">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#16161a] rounded-[2rem] overflow-hidden border border-white/5 group-hover:border-blue-500/50 transition-all duration-500 shadow-2xl">
                     <div class="p-8 md:p-12 flex flex-col justify-center">
@@ -262,48 +263,136 @@
                 </div>
             </a>
 
-            <!-- code-healer Proje Kartı Başlangıcı -->
-<a href="code_healer.html" target="_blank" class="block group">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#111115] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-blue-500/30">
-        <div class="p-8 md:p-12 flex flex-col justify-center relative">
-            <div class="text-blue-500 font-mono text-xs mb-4 uppercase tracking-[0.3em]">AI Agents & Workspace Engineering</div>
-            <h3 class="text-3xl font-bold text-white mb-6 leading-tight group-hover:text-blue-400 transition">code-healer: <br>Otonom Proje Seviyesi Kod Onarıcı</h3>
-            
-            <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
-                Python projelerindeki sözdizimi, linter ve runtime hatalarını AST ve Regex tabanlı bağımlılık haritalama (Dependency Mapping) yöntemleriyle otonom olarak çözen, çoklu dosya kuyruklu yapay zeka ajan sistemi.
-            </p>
+            <!-- Proje 2: SmartLabel-OCR (YENİ EKLENEN) -->
+            <a href="smartlabel.html" class="block group">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#111115] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-emerald-500/50">
+                    <div class="p-8 md:p-12 flex flex-col justify-center relative">
+                        <div class="text-emerald-500 font-mono text-xs mb-4 uppercase tracking-[0.3em]">.NET 10 & Gemini Multimodal AI</div>
+                        <h3 class="text-3xl font-bold text-white mb-6 leading-tight group-hover:text-emerald-400 transition">SmartLabel-OCR: <br>Akıllı Ürün Etiketi Okuma Servisi</h3>
+                        
+                        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
+                            Fiziksel ürün etiketlerindeki kumaş karışımı, yıkama/bakım sembolleri, model ve seri numaralarını Google Gemini Multimodal API ile yüksek doğrulukla ayrıştırıp SQLite üzerinde aranabilir kılan kurumsal backend servisi[cite: 1].
+                        </p>
 
-            <div class="space-y-2 mb-8">
-                <div class="flex items-center text-xs text-gray-400">
-                    <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> Planner, Worker ve Critic Ajanik Üçlü Zihin Yapısı
-                </div>
-                <div class="flex items-center text-xs text-gray-400">
-                    <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> AST & Regex Tabanlı Yerel Bağımlılık Haritalayıcı (V3)
-                </div>
-                <div class="flex items-center text-xs text-gray-400">
-                    <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> Hafıza Katmanlı Kendi Kendini Onaran (Self-Healing) Döngü
-                </div>
-            </div>
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-emerald-500 mr-2 text-[10px]"></i> Gemini Multimodal ile Kıvrık/Bozuk Etiketlerden Semantik OCR Çıkarımı
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-emerald-500 mr-2 text-[10px]"></i> .NET 10, Entity Framework Core ve SQLite İndeksleme Altyapısı[cite: 1]
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-emerald-500 mr-2 text-[10px]"></i> Kumaş Türü ve Model Koduna Göre Geçmişe Dönük Anlık Arama
+                            </div>
+                        </div>
 
-            <div class="inline-flex items-center text-blue-500 font-bold text-sm group-hover:translate-x-2 transition-transform">
-                Proje Detaylarını İncele <span class="ml-2">→</span>
-            </div>
-        </div>
+                        <div class="inline-flex items-center text-emerald-500 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                            Proje Detaylarını İncele <span class="ml-2">→</span>
+                        </div>
+                    </div>
 
-        <!-- Kod / Terminal Görsel Alanı (Karanlık Yazılım Teması) -->
-        <div class="relative h-72 lg:h-auto overflow-hidden border-l border-white/5 bg-[#050507] p-8 flex items-center justify-center">
-            <div class="w-full font-mono text-[10px] space-y-2 opacity-75">
-                <p class="text-green-500">(.venv) PS C:\Users\abdullah_topak> codeheal --dosya ana_program.py</p>
-                <p class="text-blue-400">🗺️ V3 MAPPER: Proje Bağımlılık Ağacı Çözümlendi!</p>
-                <p class="text-gray-500">📋 Tamir Sırası: ['yardimci.py', 'ana_program.py']</p>
-                <p class="text-amber-400">⚡ Planner_Agent: Kök modül 'yardimci.py' için refactor stratejisi seçildi.</p>
-                <p class="text-emerald-400">✨ Critic_Agent: ast.parse doğrulandı. Tüm modüller %100 çalışır halde mühürlendi!</p>
-                <div class="w-2 h-4 bg-blue-500 animate-pulse inline-block"></div>
-            </div>
-            <i class="fa-solid fa-code-branch absolute text-[12rem] text-blue-500/5 -right-10 -bottom-10 rotate-12"></i>
-        </div>
-    </div>
-</a>
+                    <!-- Terminal Görsel Alanı -->
+                    <div class="relative h-72 lg:h-auto overflow-hidden border-l border-white/5 bg-[#050507] p-8 flex items-center justify-center">
+                        <div class="w-full font-mono text-[10px] space-y-2 opacity-75">
+                            <p class="text-emerald-500">POST /api/Label/upload-and-parse HTTP/1.1</p>
+                            <p class="text-blue-400">🤖 Gemini-1.5: Görüntü matrisi analiz ediliyor...</p>
+                            <p class="text-gray-400">🏷️ Algılanan: {"Kumaş": "%100 Pamuk", "Yıkama": "30°C", "Seri": "AULBM10364"}</p>
+                            <p class="text-amber-400">💾 EF Core: SQLite indeksine mühürlendi (Label_ID: #4092)</p>
+                            <p class="text-emerald-400">✅ HTTP 200 OK: Veri dijital ortama aktarıldı.</p>
+                            <div class="w-2 h-4 bg-emerald-500 animate-pulse inline-block"></div>
+                        </div>
+                        <i class="fa-solid fa-tags absolute text-[12rem] text-emerald-500/5 -right-10 -bottom-10 rotate-12"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Proje 3: AI-Watermark-Compliance (YENİ EKLENEN) -->
+            <a href="watermark.html" class="block group">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#111115] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-purple-500/50">
+                    <div class="p-8 md:p-12 flex flex-col justify-center relative">
+                        <div class="text-purple-500 font-mono text-xs mb-4 uppercase tracking-[0.3em]">Python & Computer Vision</div>
+                        <h3 class="text-3xl font-bold text-white mb-6 leading-tight group-hover:text-purple-400 transition">AI Watermark Compliance: <br>Yasal Uyum & Filigran Motoru</h3>
+                        
+                        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
+                            Üretken yapay zekâ ile üretilen kampanya ve katalog görsellerine yasal regülasyonlar gereğince dinamik, şeffaf "AI Generated" filigranı basan toplu görsel işleme ve otomasyon motoru[cite: 2].
+                        </p>
+
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-purple-500 mr-2 text-[10px]"></i> Çözünürlük ve En-Boy Oranına Göre Dinamik Padding ve Boyutlandırma
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-purple-500 mr-2 text-[10px]"></i> Neue Haas Grotesk, Roboto, Inter vb. Kurumsal Tipografi Desteği[cite: 2]
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-purple-500 mr-2 text-[10px]"></i> Alfa Kanalı ve Opaklık Kontrolü ile Yüksek Görsel Estetiği
+                            </div>
+                        </div>
+
+                        <div class="inline-flex items-center text-purple-500 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                            Proje Detaylarını İncele <span class="ml-2">→</span>
+                        </div>
+                    </div>
+
+                    <!-- Terminal Görsel Alanı -->
+                    <div class="relative h-72 lg:h-auto overflow-hidden border-l border-white/5 bg-[#050507] p-8 flex items-center justify-center">
+                        <div class="w-full font-mono text-[10px] space-y-2 opacity-75">
+                            <p class="text-purple-400">(.venv) python app.py --batch-process --compliance-mode</p>
+                            <p class="text-gray-400">📂 Girdi Dizini: /raw_ai_assets/ (840 Görsel Tarandı)</p>
+                            <p class="text-amber-400">⚙️ Processing: Alpha Blending & Tipografi Yerleşimi...</p>
+                            <p class="text-emerald-400">✨ Tamamlandı: 840/840 Görsele 'AI Generated' Damgası Basıldı.</p>
+                            <p class="text-purple-500">🛡️ Regülasyon Uyumu: %100 Doğrulandı.</p>
+                            <div class="w-2 h-4 bg-purple-500 animate-pulse inline-block"></div>
+                        </div>
+                        <i class="fa-solid fa-wand-magic-sparkles absolute text-[12rem] text-purple-500/5 -right-10 -bottom-10 rotate-12"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Proje 4: code-healer Proje Kartı -->
+            <a href="code_healer.html" target="_blank" class="block group">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#111115] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:border-blue-500/30">
+                    <div class="p-8 md:p-12 flex flex-col justify-center relative">
+                        <div class="text-blue-500 font-mono text-xs mb-4 uppercase tracking-[0.3em]">AI Agents & Workspace Engineering</div>
+                        <h3 class="text-3xl font-bold text-white mb-6 leading-tight group-hover:text-blue-400 transition">code-healer: <br>Otonom Proje Seviyesi Kod Onarıcı</h3>
+                        
+                        <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
+                            Python projelerindeki sözdizimi, linter ve runtime hatalarını AST ve Regex tabanlı bağımlılık haritalama (Dependency Mapping) yöntemleriyle otonom olarak çözen, çoklu dosya kuyruklu yapay zeka ajan sistemi.
+                        </p>
+
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> Planner, Worker ve Critic Ajanik Üçlü Zihin Yapısı
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> AST & Regex Tabanlı Yerel Bağımlılık Haritalayıcı (V3)
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400">
+                                <i class="fa-solid fa-check text-blue-500 mr-2 text-[10px]"></i> Hafıza Katmanlı Kendi Kendini Onaran (Self-Healing) Döngü
+                            </div>
+                        </div>
+
+                        <div class="inline-flex items-center text-blue-500 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                            Proje Detaylarını İncele <span class="ml-2">→</span>
+                        </div>
+                    </div>
+
+                    <!-- Kod / Terminal Görsel Alanı -->
+                    <div class="relative h-72 lg:h-auto overflow-hidden border-l border-white/5 bg-[#050507] p-8 flex items-center justify-center">
+                        <div class="w-full font-mono text-[10px] space-y-2 opacity-75">
+                            <p class="text-green-500">(.venv) PS C:\Users\abdullah_topak> codeheal --dosya ana_program.py</p>
+                            <p class="text-blue-400">🗺️ V3 MAPPER: Proje Bağımlılık Ağacı Çözümlendi!</p>
+                            <p class="text-gray-500">📋 Tamir Sırası: ['yardimci.py', 'ana_program.py']</p>
+                            <p class="text-amber-400">⚡ Planner_Agent: Kök modül 'yardimci.py' için refactor stratejisi seçildi.</p>
+                            <p class="text-emerald-400">✨ Critic_Agent: ast.parse doğrulandı. Tüm modüller %100 çalışır halde mühürlendi!</p>
+                            <div class="w-2 h-4 bg-blue-500 animate-pulse inline-block"></div>
+                        </div>
+                        <i class="fa-solid fa-code-branch absolute text-[12rem] text-blue-500/5 -right-10 -bottom-10 rotate-12"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Proje 5: Cyber-Specialist AI -->
             <a href="cyber-ai.html" class="block group">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch bg-[#0d0d12] rounded-[2rem] overflow-hidden border border-white/5 group-hover:border-purple-500/50 transition-all duration-500 shadow-xl">
                     <div class="p-8 md:p-12 flex flex-col justify-center">
@@ -333,7 +422,6 @@
                 </div>
             </a>
 
-<!-- code-healer Proje Kartı Bitişi -->
         </div>
     </section>
 
